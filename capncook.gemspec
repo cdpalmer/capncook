@@ -13,15 +13,15 @@ Gem::Specification.new do |spec|
   spec.description   = 'Since most user/person/customer data structures have similar db attributes,'\
     'this gem will attempt to create those classes with attribute information based on the '\
     'show Breaking Bad.  For example: `User.create(name: "Walter White", email: '\
-    '"crystalbluepersuasion@heisenberg.com", ...)'
+    '"crystalbluepersuasion@heisenberg.com", ...)`'
   
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/cdpalmer/capncook"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata['allowed_push_host'] = "https://rubygems.org"
   else
     raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   end
