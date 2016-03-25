@@ -1,11 +1,16 @@
 require 'spec_helper'
 
 describe Capncook do
-  it 'has a version number' do
-    expect(Capncook::VERSION).not_to be nil
+  it 'can create a Walter White user' do
+    user = Capncook.build(:user)
+    expect(user.first_name).to eq("Walter")
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  it 'errors on unknown class' do
+    expect{ Capncook.build(:nothing) }.to raise_error("'Nothing' is an unknown class.")
   end
+end
+
+class User
+  attr_accessor :first_name
 end
